@@ -15,6 +15,11 @@ app.model(require('./models/preview'))
 // define routes:
 app.router((route) => [
   route('/install', require('./pages/create')),
+  route('/', require('./pages/landing/splash')),
+  route('/about', require('./pages/landing/about')),
+  route('/team', require('./pages/landing/team')),
+  route('/blog', require('./pages/landing/blog')),
+  route('/blog/:name', require('./pages/landing/post')),
   route('/browser', require('./pages/create/browser')),
   route('/list', require('./pages/list')),
   route('/register', require('./pages/auth/register')),
