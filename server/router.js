@@ -56,7 +56,7 @@ module.exports = function (opts, db) {
       state.list.data = body
       sendSPA(req, res, state)
     })
-  }
+  })
 
   router.get('/download/:archiveKey', function (req, res) {
     var state = getDefaultAppState()
